@@ -1,0 +1,110 @@
+aside {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 250px ;
+    max-width: 250px;
+    
+    .icon-menu2 {
+        display: none;
+    }
+}
+@include media-breakpoint-down(md) {
+    aside {
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    flex: 0 0 100%;
+    max-width: 100%;
+    z-index: 1000;
+    translate: transformX(-100%);
+    transition: 0.4s all;
+    background-color: $white;
+
+    .icon-menu2 {
+        display: block;
+    }
+    ul a {
+        font-size: $font-size-medium;
+    }
+    }
+}
+
+.nav-head {
+    padding:40px 40px 30px 48px;
+    @include media-breakpoint-down ()
+}
+
+.navbar {
+    ul {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    a {
+        border-left: 3px solid transparent;
+        display: block;
+        text-decoration: none;
+        padding: 0.75rem;
+        margin: 0.75rem 0;
+        &:hover {
+            font-weight: bolder;
+           border-left: 3px solid black;
+           
+        }
+    }
+   
+}
+.avatar {
+    border-radius: $border-radius-normal;
+    img {
+        height: 60px;
+        width: auto;
+        border-radius: $border-radius-normal;
+    }    
+}
+// SIDEBAR
+// #sidebar {
+//     // display: none;
+// }
+  #sidebar {
+      display: none;
+      &:checked {
+        & ~ aside {
+          flex-basis: 0;
+        //   width: 0;
+        white-space: nowrap;
+          transform: translateX(-100%);
+          transition: 0.4s all;
+          .icon {
+            transform: translateX(-100%);
+            transition: 0.4s all;
+          }
+          .aside-text{
+              transform: translateX(-100%);
+              transition: 0.4s all;
+          }
+          .avatar-wrapper {
+              transform: translateY(100%);
+          }
+        }
+      }
+  }
+  #sidebar:not(checked){
+      & ~ aside{
+        white-space: nowrap;
+          transition: 0.4s all;
+          .aside-text{
+            // transform: translateX(100%);
+            transition: 0.4s all;
+        }
+        .avatar-wrapper {
+            transition: 0.4s all;
+        }
+      }
+  }
+// Sidebar Toggle
+.toggle {
+    font-size: $font-size-medium;
+      cursor: pointer;
+  }

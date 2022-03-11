@@ -1,0 +1,23 @@
+// // Theme colors
+$primary: #000000;
+$secondary: #e4e0d5;
+$success-primary: #a1dba7;
+$success-secondary: #6db175;
+$warning: #c1875e; 
+$info:#89c5d6;
+$info-secondary:#80bbc9;
+$gray-light: #f4f5f9;
+$gray-dark: #818181;
+$white: #ffffff;
+$black: #000000;
+
+// // Map
+$cards: (
+    "main": $secondary,
+    "sales": $warning,
+    "profit":$success-secondary,
+    "orders": $info-secondary,
+    "visits": $gray-dark,
+);
+
+$bg-body:$primary;

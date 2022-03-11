@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Dashboard</title>
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/icons/style.css">
+
+</head>
+
+<body>
+  <!-- Aside : starts here -->
+  <div class="d-flex h-100">
+    <input type="checkbox" name="sidebar" id="sidebar" checked>
+    <aside class="h-100 d-flex flex-column overflow-hidden flex-grow-1">
+      <!-- Brand : start -->
+      <div class="d-flex align-items-center">
+        <div class="nav-head display-6">
+         <span class="icon-home "></span>
+        </div>
+        <div>
+          <label for="sidebar"><span class=" display-3 icon-menu2"></span></label>
+        </div>
+      </div>
+      <!-- Brand : end -->
+      <nav class="navbar h-100 flex-grow-1 flex-column  overflow-hidden">
+        <!-- Navlist : start -->
+        <ul class="w-100 flex-grow-1">
+          <li>
+            <a href="#" class="d-flex align-items-center ps-5">
+              <span class="icon-home icon"></span>
+              <span class="ps-4 aside-text">Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center ps-5">
+              <span class="icon-projects icon"></span>
+              <span class="ps-4 aside-text">Projects</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center ps-5">
+              <span class="icon-billings icon"></span>
+              <span class="ps-4 aside-text">Billings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center ps-5">
+              <span class="icon-team icon"></span>
+              <span class="ps-4 aside-text">Team Members</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center ps-5">
+              <span class="icon-states icon"></span>
+              <span class="ps-4 aside-text">Stats</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="d-flex align-items-center ps-5">
+              <span class="icon-settings icon"></span>
+              <span class="ps-4 aside-text">Settings</span>
+            </a>
+          </li>
+        </ul>
+        <!-- Navlist end -->
+      </nav>
+
+      <!-- Profile : start -->
+      <div class="avatar-wrapper">
+        <div class="d-flex flex-column mx-auto mt-auto">
+          <div class="avatar d-flex justify-content-center p-2 border border-3 m-auto">
+            <img src="assets/img/avatar.jpg" alt="avatar">
+          </div>
+        </div>
+        <div class="d-flex justify-content-center pb-5 pt-3">
+          <span class="fw-bold fs-5">David Milan</span>
+        </div>
+      </div>
+      <!-- Profile : end -->
+    </aside>
+    <!-- Aside : ends here -->
+
+    <!-- Main : starts here -->
+    
+    <div class="d-flex flex-grow-1 flex-sm-wrap flex-wrap flex-lg-nowrap overflow-auto">
+      
+      <div class="main-wrapper flex-grow-1">
+        <!-- Search : start -->
+        <div class="d-flex align-items-center px-5 py-5">
+          <div>
+            <label for="sidebar"><span class="toggle icon-menu1 p-0 pe-4"></span></label>
+          </div>
+          <input type="search" name="search" id="search" class="p-1" placeholder="search for stats">
+        </div>
+        <!-- Search : end -->
+        <!-- Header text and filter button : start -->
+        <div class="d-flex justify-content-between px-5 align-items-center pb-4">
+          <div>
+            <h1>Hello David</h1>
+            <span class="hero-text">Welcome back !</span>
+          </div>
+          <div class="d-flex mt-auto">
+            <input type="search" name="search" id="filter" placeholder="Filters">
+          </div>
+        </div>
+        <!-- Header text and filter button : end -->
+        <!-- Cards : start -->
+        <div class="card-container px-5">
+          <div class="row mx-0 g-5">
+            <div class="col-12 px-0">
+              <div
+                class="card bg-secondary bg-opacity-25 d-flex flex-row justify-content-between card-main card-icon-bg p-4 border-0">
+                <div>
+                  <div>
+                    <span class="icon-eye icon bg-secondary p-2 rounded-circle"></span>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <span class="hero-text">Views</span>
+                    <span class="hero-head">500</span>
+                    <span class="hero-text">per Day</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <span class="icon icon-compass bg-secondary p-2 rounded-circle"></span>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <span class="hero-text">Views</span>
+                    <span class="hero-head">500</span>
+                    <span class="hero-text">per Day</span>
+                  </div>
+                </div>
+                <div>
+                  <div>
+                    <span class="icon icon-orders bg-secondary p-2 rounded-circle"></span>
+                  </div>
+                  <div class="d-flex flex-column">
+                    <span class="hero-text">Views</span>
+                    <span class="hero-head">500</span>
+                    <span class="hero-text">per Day</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 px-0 col-xs-12">
+              <div class="card card-sales bg-warning bg-opacity-25 border-0 flex-row justify-content-between">
+                <div class="d-flex flex-column px-4 py-5">
+                  <span class="card-text">Sales</span>
+                  <span class="hero-text">Total Sales Today</span>
+                  <span class="card-head">$500</span>
+                </div>
+                <div class="p-4">
+                  <span class="icon icon-arrow-down-right text-warning card-icon-bg"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 px-0 col-xs-12 px-0 ps-lg-5 ps-md-0">
+              <div class="card card-profit bg-success bg-opacity-25 border-0 flex-row justify-content-between">
+                <div class="d-flex flex-column px-4 py-5">
+                  <span class="card-text">Profit</span>
+                  <span class="hero-text">Per day ratio</span>
+                  <span class="card-head">$150</span>
+                </div>
+                <div class="p-4">
+
+                  <span class="icon-arrow-down-right text-success icon"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 px-0 col-xs-12 px-0">
+              <div class="card card-orders bg-info bg-opacity-25 border-0 flex-row justify-content-between">
+                <div class="d-flex flex-column px-4 py-5">
+                  <span class="card-text">Orders</span>
+                  <span class="hero-text">Total Order Today</span>
+                  <span class="card-head">1000</span>
+                </div>
+                <div class="p-4">
+                  <span class="icon icon-arrow-up-right text-info"></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 px-0 col-xs-12 px-0 ps-lg-5 ps-md-0">
+              <div class="card card-visits border-0 flex-row justify-content-between">
+                <div class="d-flex flex-column px-4 py-5">
+                  <span class="card-text">Visits</span>
+                  <span class="hero-text">Total Visits Today</span>
+                  <span class="card-head">400</span>
+                </div>
+                <div class="p-4">
+                  <span class="icon icon-arrow-up-right"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cards : end -->
+      </div>
+      <!-- Sales Statistics : start -->
+      <div class="stats-card bg-primary d-flex flex-column me-5 my-5 ms-5 ms-lg-0 overflow-auto">
+        <!-- title start-->
+        <div class="hero-text py-4 px-5">
+          <span>Sales Revenue</span>
+        </div>
+        <!-- title end -->
+        <!-- sales cards : start -->
+        <div>
+          <div class="d-flex align-items-center px-5 py-3">
+            <span class="icon icon-sales"></span>
+            <div class="d-flex flex-column px-4">
+              <span>230k</span>
+              <span>Sales</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center px-5 py-3">
+            <span class="icon icon-user"></span>
+            <div class="d-flex flex-column px-4">
+              <span>8.549k</span>
+              <span>Customers</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center px-5 py-3">
+            <span class="icon icon-product"></span>
+            <div class="d-flex flex-column px-4">
+              <span>1.423k</span>
+              <span>Products</span>
+            </div>
+          </div>
+
+          <div class="d-flex align-items-center px-5 py-3">
+            <span class="icon icon-revenue"></span>
+            <div class="d-flex flex-column px-4">
+              <span>$9745</span>
+              <span>Revenue</span>
+            </div>
+          </div>
+          <!-- sales cards : end -->
+          <!-- statisics : start -->
+          <div>
+            <div class="hero-text py-4 px-5">
+              <span>Statistics</span>
+            </div>
+            <div>
+              <img src="" alt="">
+            </div>
+          </div>
+          <!-- statisics : end -->
+        </div>
+      </div>
+      <!-- Sales Statistics : end -->
+    </div>
+  </div>
+
+</html>
